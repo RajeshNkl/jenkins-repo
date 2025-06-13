@@ -9,7 +9,7 @@ pipeline {
         stage('Test') { 
             steps {
             echo "stage-2"
-            sh test.sh
+            free -m
             }
         }
         stage('Deploy') { 
