@@ -9,8 +9,10 @@ pipeline {
         stage('Test') { 
             steps {
             echo "stage-2"
-            free -m
-            }
+             sh '''#!/bin/bash
+                  free -h
+           '''          
+          }
         }
         stage('Deploy') { 
             steps {
